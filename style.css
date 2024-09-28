@@ -45,3 +45,38 @@ body {
     gap: 5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+#bottom > span {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+#bottom > span > svg {
+    margin-right: 5px;
+    width: 25px;
+}
+
+.texte_anime {
+    animation: devoilement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes devoilement {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    10%   {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    95%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
